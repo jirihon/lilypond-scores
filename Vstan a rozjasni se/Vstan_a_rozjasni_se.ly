@@ -13,8 +13,8 @@
   system-system-spacing #'minimum-distance = #20
   
   top-margin = 1\cm
-  left-margin = 1\cm
-  right-margin = 1\cm
+  left-margin = 1.6\cm
+  right-margin = 1.5\cm
   bottom-margin = 1.5\cm
   indent = 0\cm
 }

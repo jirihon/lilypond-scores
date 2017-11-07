@@ -14,8 +14,8 @@
   system-system-spacing #'minimum-distance = #14
   
   top-margin = 1\cm
-  left-margin = 1\cm
-  right-margin = 1\cm
+  left-margin = 1.7\cm
+  right-margin = 1.5\cm
   bottom-margin = 1.5\cm
   indent = 0\cm
 }
@@ -25,7 +25,7 @@ global = {
   \key f \major
   \set Timing.beamExceptions = #'()
   \set Timing.baseMoment = #(ly:make-moment 1 4)
-  \set Timing.beatStructure = #'(1 1 1 1)
+  \set Timing.beatStructure = #'(1 1 1)
 }
 
 soprano = \relative c' {
@@ -42,7 +42,7 @@ soprano = \relative c' {
   a8 a a a c c |
   a4 a( g) |
   f8 f f f e16( d) e8 |
-  d4 d r \bar "|."
+  d4 d b'4\rest \bar "|."
 }
 
 alto = \relative c' {
@@ -59,7 +59,7 @@ alto = \relative c' {
   f8 f f f g g |
   f4 f( c) |
   d8 d d d c c |
-  d4 d r 
+  d4 d \skip 4 
 }
 
 tenor = \relative c {
@@ -76,7 +76,7 @@ tenor = \relative c {
   c8 c c c c c |
   a4 a( g) |
   bes8 a g f g bes |
-  a4 a r4 
+  a4 a d,4\rest 
 }
 
 bass = \relative c {
@@ -93,7 +93,7 @@ bass = \relative c {
   f8 f f f e e |
   d4 d( c) |
   bes8 bes a bes c c |
-  d4 d r
+  d4 d \skip 4
 }
 
 verseOne = \lyricmode {
@@ -102,7 +102,7 @@ verseOne = \lyricmode {
   a o -- sla -- vuj -- te je -- ho jmé -- no sva -- té.
   \set stanza = "Ref:"
   A -- le -- lu -- ja, a -- le -- lu -- ja,
-  a -- le -- lu -- ja, a -- le -- lu -- ja,
+  a -- le -- lu -- ja, a -- le -- lu -- ja.
   A -- le -- lu -- ja, a -- le -- lu -- ja,
   a -- le -- lu -- ja, a -- le -- lu -- ja.
 }
