@@ -1,9 +1,9 @@
 \version "2.16.2"
 
 \header {
-  title = "Vstaň a rozjasni se"
-  subtitle = "Izaiáš 60"
-  composer = "T+N: GOCAM"
+  title = \markup \override #'(font-name . "Alegreya Sans Black") "Vstaň a rozjasni se"
+  subtitle = \markup \override #'(font-name . "Alegreya Sans") "Izaiáš 60"
+  composer = \markup \override #'(font-name . "Alegreya Sans") "T+N: GOCAM"
   tagline = "2017"
 }
 
@@ -95,6 +95,8 @@ bass = \relative c {
 }
 
 songChords = \chordmode {
+  \override ChordName #'font-name = #"Alegreya Sans"
+  \override ChordName #'font-size = #2
   \germanChords
   \repeat volta 2 {
   e1:m |

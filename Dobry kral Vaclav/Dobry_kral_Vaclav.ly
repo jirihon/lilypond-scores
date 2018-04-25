@@ -9,18 +9,21 @@
 \paper {
   %system-system-spacing #'minimum-distance = #22
   top-margin = 1.5\cm
-  left-margin = 1.2\cm
-  right-margin = 1.2\cm
+  left-margin = 1.5\cm
+  right-margin = 1.5\cm
   bottom-margin = 1.5\cm
+  indent = 1\cm
+  ragged-last = ##f
 }
 
 global= {
   \time 2/4
   \key g \major
+  \tempo 4 = 108
 }
 
 Cello =  \new Voice \relative c {
-  \set Staff.instrumentName = #"Vlc."
+  \set Staff.instrumentName = #"Tbn."
   \clef bass
   
   r2 |
@@ -39,41 +42,41 @@ Cello =  \new Voice \relative c {
   g-. g-. d4 |
   c8-. g'16( fis) g8-. d-. |
   g,4-> g-> |
-  d'2~ d | \break
+  <g d'>2~ <g d'> |
   c8-. g'16( fis) g8-. d-. |
   g,4-> g-> |
   d'8-. d-. e-. fis-. |
   g-. fis16( e) d8-. d-. |
-  d2
+  <d a'>2
   g,2
-  g2\fermata
+  <g d'>2\fermata \break
   \repeat volta 2 {
-  d'2 |
-  d2 |
-  c8-. g'16( fis) g8-. d-. |
-  g,4-> g-> | \break
-  d'2 |
-  d2 |
+  <g d'>2 |
+  <g d'>2 |
   c8-. g'16( fis) g8-. d-. |
   g,4-> g-> |
-  d'2 |
-  d2 |
+  <g d'>2 |
+  <g d'>2 |
   c8-. g'16( fis) g8-. d-. |
   g,4-> g-> |
-  d'2 |
-  d4 a' |
-  a2 |
+  <g d'>2 |
+  <g d'>2 |
+  c8-. g'16( fis) g8-. d-. |
+  g,4-> g-> |
+  <g d'>2 |
+  <g d'>4 <d' a'> |
+  <d a'>2 |
   g |
-  d \bar "||" \break
+  <g, d'> \bar "||"
   c |
   g'4 c, |
   g2~ g~ g |
-  g\fermata
+  g\fermata \break
   }
   g'8-. g-. g-. a-. |
   g-. g-. d4 |
   c8-. g'16( fis) g8-. d-. |
-  g,4-> g-> | \break
+  g,4-> g-> |
   g'8-. g-. g-. a-. |
   g-. g-. d4 |
   c8-. g'16( fis) g8-. d-. |
