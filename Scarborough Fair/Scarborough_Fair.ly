@@ -10,15 +10,15 @@
 }
 
 \paper {
-  %system-system-spacing #'minimum-distance = #22
+  system-system-spacing #'minimum-distance = #15
   top-margin = 1.5\cm
-  left-margin = 1.2\cm
-  right-margin = 1.2\cm
+  left-margin = 1.5\cm
+  right-margin = 1.5\cm
   bottom-margin = 2\cm
   indent = 0\cm
 }
 
-#(set-global-staff-size 19)
+%#(set-global-staff-size 19)
 
 global= {
   \time 3/4
@@ -27,8 +27,8 @@ global= {
   \clef bass
 }
 
-voiceOne = \new Voice \relative c'' {
-  \clef treble
+voiceOne = \new Voice \relative c' {
+  %\clef treble
   g2(\pp g4
   d'2 d4
   a4. bes8 a4
@@ -88,8 +88,8 @@ voiceOne = \new Voice \relative c'' {
   \bar "|."
 }
 
-voiceTwo = \new Voice \relative c'' {
-  \clef treble
+voiceTwo = \new Voice \relative c' {
+  %\clef treble
   g2(\pp g4
   d'2 d4
   a4. bes8 a4
@@ -146,8 +146,8 @@ voiceTwo = \new Voice \relative c'' {
   
 }
 
-voiceThree = \new Voice \relative c'' {
-  \clef treble
+voiceThree = \new Voice \relative c' {
+  %\clef treble
   g2(\pp g4
   d'2 d4
   a4. bes8 a4
@@ -261,9 +261,9 @@ voiceFour = \new Voice \relative c {
 
 \score {
   \new StaffGroup <<
-    \new Staff << \global \voiceOne >>
-    \new Staff << \global \voiceTwo >>
-    \new Staff << \global \voiceThree >>
+    %\new Staff << \global \voiceOne >>
+    %\new Staff << \global \voiceTwo >>
+    %\new Staff << \global \voiceThree >>
     \new Staff << \global \voiceFour >>
   >>
   \layout { }
