@@ -1,20 +1,21 @@
 \version "2.16.2"
 
 \header {
-  title = \markup \override #'(font-name . "Alegreya Sans Black") "Vstaň a rozjasni se"
-  subtitle = \markup \override #'(font-name . "Alegreya Sans") "Izaiáš 60"
-  composer = \markup \override #'(font-name . "Alegreya Sans") "T+N: GOCAM"
-  tagline = "2017"
+  title = \markup \override #'(font-name . "Alegreya Sans Black")
+    \override #'(font-size . 6) "Vstaň a rozjasni se"
+  subtitle = \markup \override #'(font-name . "Alegreya Sans Bold") "Izaiáš 60"
+  composer = "T+N: GOCAM"
+  tagline = "2017, ŘKF Opava–Jaktař"
 }
 
 #(set-global-staff-size 19)
 
 \paper {
-  system-system-spacing #'minimum-distance = #20
+  %system-system-spacing #'minimum-distance = #20
   
-  top-margin = 1\cm
-  left-margin = 1.6\cm
-  right-margin = 1.5\cm
+  top-margin = 1.5\cm
+  left-margin = 2\cm
+  right-margin = 1.7\cm
   bottom-margin = 1.5\cm
   indent = 0\cm
 }
@@ -40,15 +41,20 @@ soprano = \relative c' {
   fis8 fis g4 a2 |
   dis,8 b dis e fis fis g fis |
   e1 | \break
-  \overrideProperty #"Score.NonMusicalPaperColumn"
-    #'line-break-system-details #'((Y-offset . 77))
+  
+  %\overrideProperty NonMusicalPaperColumn.line-break-system-details
+    %#'((Y-offset . 106))
+  %\overrideProperty #"Score.NonMusicalPaperColumn"
+    %#'line-break-system-details #'((Y-offset . 77))
   
   gis4 gis8 a b4 b |
   c4 c8 b a4 a |
   b4 b8 c b a g a |
   b2~ b | \break
-  \overrideProperty #"Score.NonMusicalPaperColumn"
-    #'line-break-system-details #'((Y-offset . 106))
+  %\overrideProperty NonMusicalPaperColumn.line-break-system-details
+    %#'((Y-offset . 106))
+  %\overrideProperty #"Score.NonMusicalPaperColumn"
+    %#'line-break-system-details #'((Y-offset . 106))
   gis4 gis8 a b4 b |
   c4 c8 b a4 a |
   b4 b8 c b a g fis |
@@ -95,8 +101,8 @@ bass = \relative c {
 }
 
 songChords = \chordmode {
-  \override ChordName #'font-name = #"Alegreya Sans"
-  \override ChordName #'font-size = #2
+  %\override ChordName #'font-name = #"Alegreya Sans"
+  %\override ChordName #'font-size = #2
   \germanChords
   \repeat volta 2 {
   e1:m |

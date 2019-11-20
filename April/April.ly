@@ -21,7 +21,7 @@ global= {
 }
 
 PartPOneVoiceOne =  \new Voice \relative c' {
-  \set Staff.instrumentName = #"Voice 1"
+  %\set Staff.instrumentName = #"Voice 1"
   
   d4 c8 bes8 c4 d4 | % 2
   bes4 c4 a2 | % 3
@@ -65,7 +65,7 @@ PartPOneVoiceOne =  \new Voice \relative c' {
 }
 
 PartPTwoVoiceOne =  \new Voice \relative c' {
-  \set Staff.instrumentName = #"Voice 2"
+  %\set Staff.instrumentName = #"Voice 2"
   
   bes4 a8 g8 a4 d,4 | % 2
   g4 a8 g8 fis8 e8 fis4 | % 3
@@ -109,7 +109,7 @@ PartPTwoVoiceOne =  \new Voice \relative c' {
 }
 
 PartPThreeVoiceOne =  \new Voice \relative c {
-  \set Staff.instrumentName = #"Voice 3"
+  %\set Staff.instrumentName = #"Voice 3"
   
   R1*2 | % 3
   r2 bes4 a8 g8 | % 4
@@ -152,7 +152,7 @@ PartPThreeVoiceOne =  \new Voice \relative c {
 }
 
 PartPFourVoiceOne =  \new Voice \relative c {
-  \set Staff.instrumentName = #"Voice 4"
+  %\set Staff.instrumentName = #"Voice 4"
   
   \clef bass
   R1*2 | % 3

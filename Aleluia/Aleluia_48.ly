@@ -1,7 +1,7 @@
 \version "2.16.2"
 
 \header {
-  tagline = "2018"
+  tagline = "2018, ŘKF Opava–Jaktař"
 }
 
 %#(set-global-staff-size 19)
@@ -79,9 +79,7 @@ bassRef = \relative c' {
 
 globalVerse = {
   \override Staff.TimeSignature #'stencil = ##f % hide time signature
-  \override Score.BarLine #'stencil = ##f % hide bars
   \time 4/4
-  %\tempo 4 = 85
   \key a \major
   \set Timing.beamExceptions = #'()
   \set Timing.baseMoment = #(ly:make-moment 1 4)
@@ -90,29 +88,29 @@ globalVerse = {
 
 sopranoVerse = \relative c'' {
   \globalVerse
-  a\breve a4( fis)
-  \bar "|" \break
-  fis\breve e8 d e4 e
+  a\breve*1/2 \bar "" \skip 2 a4( fis)
+  \break
+  fis\breve*1/2 \bar "" e8 d e8 e8 e4
   \revert Score.BarLine #'stencil
   \bar "|."
 }
 
 altoVerse = \relative c' {
   \globalVerse
-  e\breve fis4( cis)
-  d\breve b8 b b4 b
+  e\breve*1/2 \skip 2 fis4( cis)
+  d\breve*1/2 b8 b b8 b8 b4
 }
 
 tenorVerse = \relative c' {
   \globalVerse
-  cis\breve cis8( b a4)
-  b\breve b8 b b( a) gis4
+  cis\breve*1/2 \skip 2 cis8( b a4)
+  b\breve*1/2 b8 b b a gis4
 }
 
 bassVerse = \relative c' {
   \globalVerse
-  a\breve fis4~ fis
-  \skip\breve b,8 b e4 e
+  a\breve*1/2 \skip 2 fis4~ fis
+  \skip\breve*1/2 b,8 b e8 e8 e4
 }
 
 textRef = \lyricmode {
@@ -141,16 +139,16 @@ songChords = \chordmode {
 
 textVerse = \lyricmode {
   \once \override LyricText #'self-alignment-X = #LEFT
-  "Milujeme-li se navzájem, Bůh zůstavá" "v nás" __
+  "Milujeme-li se navzájem, Bůh zůstává" "v nás" __
   \once \override LyricText #'self-alignment-X = #LEFT
-  "a jeho láska je v nás" do -- ko -- na -- lá.
+  "a jeho láska je v nás přivedena" "k do" -- ko -- na -- lo -- sti.
 }
 
 \score {
   \new ChoirStaff <<
     \new ChordNames \with {
-      \override ChordName #'font-name = "Alegreya Sans"
-      \override ChordName #'font-size = 2
+      %\override ChordName #'font-name = "Alegreya Sans"
+      %\override ChordName #'font-size = 2
     } \songChords
     \new Staff <<
       \new Voice = "soprano" { \voiceOne \sopranoRef }

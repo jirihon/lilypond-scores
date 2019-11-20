@@ -1,21 +1,23 @@
 \version "2.16.2"
 
 \header {
-  title = "Pánu našemu písně hrejte"
+  title = \markup
+  \override #'(font-name . "Alegreya Sans Black")
+    \override #'(font-size . 6) "Pánu našemu písně hrejte"
   subtitle = ""
   composer = "T+N: K. Žák, N: J. Sykulski"
   arranger = "Upr.: br. Cyprián"
-  tagline = "2017"
+  tagline = "2017, ŘKF Opava–Jaktař"
 }
 
-#(set-global-staff-size 19)
+%#(set-global-staff-size 19)
 
 \paper {
-  system-system-spacing #'minimum-distance = #14
+  system-system-spacing #'minimum-distance = #15
   
-  top-margin = 1\cm
-  left-margin = 1.7\cm
-  right-margin = 1.5\cm
+  top-margin = 1.5\cm
+  left-margin = 2\cm
+  right-margin = 1.7\cm
   bottom-margin = 1.5\cm
   indent = 0\cm
 }
