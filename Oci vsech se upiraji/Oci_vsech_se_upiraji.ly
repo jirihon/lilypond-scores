@@ -11,7 +11,7 @@
   "Podle žalmu 104"
   composer = "Petr Eben"
   %piece = "Poprvé v 1. taktu zazpívat unisono melodii sopránu, pak už vždy čtyřhlas."
-  tagline = "2018"
+  tagline = "2018, ŘKF Opava–Jaktař"
 }
 
 #(set-global-staff-size 19)
