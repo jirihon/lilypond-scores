@@ -5,7 +5,7 @@
     \override #'(font-size . 6) "Vstaň a rozjasni se"
   subtitle = \markup \override #'(font-name . "Alegreya Sans Bold") "Izaiáš 60"
   composer = "T+N: GOCAM"
-  tagline = "2017, ŘKF Opava–Jaktař"
+  tagline = "2017 ŘKF Opava–Jaktař"
 }
 
 #(set-global-staff-size 19)

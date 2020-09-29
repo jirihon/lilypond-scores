@@ -7,7 +7,7 @@
   subtitle = ""
   composer = "T+N: K. Žák, N: J. Sykulski"
   arranger = "Upr.: br. Cyprián"
-  tagline = "2017, ŘKF Opava–Jaktař"
+  tagline = "2017 ŘKF Opava–Jaktař"
 }
 
 %#(set-global-staff-size 19)

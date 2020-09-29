@@ -7,7 +7,7 @@
   subtitle = ""
   composer = "Moravská lidová"
   arranger = "arr.: o. Josef Olejník"
-  tagline = "2018, ŘKF Opava–Jaktař"
+  tagline = "2018 ŘKF Opava–Jaktař"
 }
 
 %#(set-global-staff-size 19)

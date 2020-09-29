@@ -6,7 +6,7 @@
   \override #'(font-size . 6)
   "Svatební"
   composer = "Jerichove trúby"
-  tagline = "2018, ŘKF Opava–Jaktař"
+  tagline = "2018 ŘKF Opava–Jaktař"
 }
 
 %#(set-global-staff-size 19)
