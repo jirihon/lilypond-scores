@@ -5,7 +5,7 @@
 \header {
   title = \markup
   \override #'(font-name . "Alegreya Sans Black")
-  \override #'(font-size . 5) "Bože, Otče na nebi"
+  \override #'(font-size . 5) "Bože Otče na nebi"
   composer = "Zuzana Nováková, Václav Renč"
   tagline = "2020 ŘKF Opava–Jaktař"
 }
